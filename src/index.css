@@ -1,0 +1,56 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.flex-table {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.flex-table-cell {
+  box-sizing: border-box;
+  flex-grow: 1;
+  overflow: hidden;
+  list-style: none;
+}
+
+.seat {
+    color: white;
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.seat:hover,
+.seat:focus {
+  color: white;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(145, 92, 182, .4);
+  border-color: #66afe9;
+  outline: 0;
+}
+
+.legend-item > div {
+  display: inline-block;
+}
+
+.legend-color {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 2px;
+  display: inline-block;
+  line-height: 28px;
+  padding: 3px;
+}
